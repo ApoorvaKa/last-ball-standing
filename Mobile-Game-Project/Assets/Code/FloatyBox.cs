@@ -11,7 +11,8 @@ public class FloatyBox : MonoBehaviour
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-        guideline = GetComponentInChildren<LineRenderer>();
+        //guideline = GetComponentInChildren<LineRenderer>();
+        guideline = GetComponent<LineRenderer>();
     }
 
     void Update()
@@ -19,6 +20,9 @@ public class FloatyBox : MonoBehaviour
         if(Input.touchCount > 0){
             Touch touch = Input.GetTouch(0);
             Vector2 change = touch.position - startpos;
+            if (change.magnitude > 100){
+                change = change.normalized * 100;
+            }
             if (touch.phase == TouchPhase.Began)
             {
                 startpos = touch.position;
@@ -29,7 +33,7 @@ public class FloatyBox : MonoBehaviour
             }
             if (touch.phase == TouchPhase.Ended)
             {
-                _rigidbody.AddForce(-2*change);
+                _rigidbody.AddForce(-4*change);
                 guideline.SetPosition(1, Vector3.zero);
             }
         }
