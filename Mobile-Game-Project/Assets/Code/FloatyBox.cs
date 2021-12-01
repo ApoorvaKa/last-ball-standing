@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FloatyBox : MonoBehaviour
 {
@@ -31,6 +32,20 @@ public class FloatyBox : MonoBehaviour
                 _rigidbody.AddForce(-2*change);
                 guideline.SetPosition(1, Vector3.zero);
             }
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other){
+        if(other.CompareTag("PickUp")){
+            Destroy(other.gameObject);
+            PublicVars.itemsCollected++;
+            // Will add UI and audio changes when decided
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other){
+        if (other.gameObject.CompareTag("Obstacle")){
+            print("died");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
