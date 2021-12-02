@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FloatyBox : MonoBehaviour
+public class Player : MonoBehaviour
 {
     Rigidbody2D _rigidbody;
     LineRenderer guideline;
@@ -11,7 +11,6 @@ public class FloatyBox : MonoBehaviour
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-        //guideline = GetComponentInChildren<LineRenderer>();
         guideline = GetComponent<LineRenderer>();
     }
 
