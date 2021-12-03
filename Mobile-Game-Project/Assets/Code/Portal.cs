@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
-    public int nextSceneNum;
+    public string scene;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,7 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other){
         if (other.CompareTag("Player")){
-            SceneManager.LoadScene("Scene"+nextSceneNum);
+            SceneManager.LoadScene(scene);
         }
     }
 }
