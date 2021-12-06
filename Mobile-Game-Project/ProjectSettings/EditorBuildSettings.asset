@@ -8,18 +8,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hub.unity
     guid: 33b9f8fcaa9418e4ea45746967cf1b88
-  - enabled: 1
-    path: Assets/Scenes/Blue1.unity
+  - enabled: 0
+    path: Assets/Scenes/Scene0.unity
     guid: 7c19354b93f044981b27957e546c489e
   - enabled: 1
     path: Assets/Scenes/Blue2.unity
     guid: bb30713edd2511044900098f730b3b5d
   - enabled: 1
-    path: Assets/Scenes/Red1.unity
+    path: Assets/Scenes/Blue1.unity
+    guid: 9fb9e550a1f42419ebe3000fdcc89da7
+  - enabled: 0
+    path: Assets/Scenes/Scene1.unity
     guid: 9638b5ac425dd48e9907adffc7372cfb
   - enabled: 1
     path: Assets/Scenes/Red2.unity
     guid: 9d8305d572a98db47b0f90870ee9a1de
+  - enabled: 1
+    path: Assets/Scenes/Red1.unity
+    guid: 44fa9e100f9644a25a694c4b29447c85
   - enabled: 1
     path: Assets/Scenes/Purp1.unity
     guid: a8ee8ced3087a3648984beb8114b94d9
