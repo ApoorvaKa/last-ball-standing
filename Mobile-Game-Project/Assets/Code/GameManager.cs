@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GameManager : MonoBehaviour
     public GameObject pauseBtn;
     public int enemyCount;
     public GameObject portal;
+    public Text timer;
+    float timePassed = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,10 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Update(){
+        timePassed += Time.deltaTime;
+        timer.text = "" + timePassed;
+    }
     void FixedUpdate()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
