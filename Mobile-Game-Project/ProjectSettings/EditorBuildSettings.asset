@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Purp2.unity
     guid: 1f806b2cb44eb4f40839ba3b9db47efb
+  - enabled: 1
+    path: Assets/Scenes/Red12.unity
+    guid: b15378b475d031b488687a6c9f552095
   m_configObjects: {}

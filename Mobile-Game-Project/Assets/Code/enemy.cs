@@ -10,6 +10,8 @@ public class enemy : MonoBehaviour
     Vector2 startpos;
     float delay = 0;
     float passed = 0;
+    public float detection = 10;
+
     GameObject _player;
     void Start()
     {
@@ -22,7 +24,7 @@ public class enemy : MonoBehaviour
     {
         passed += Time.deltaTime;
         Vector2 difference = _player.transform.position - transform.position;
-        if(difference.magnitude <= 10 && delay <= passed){
+        if(difference.magnitude <= detection && delay <= passed){
             print("HIT");
             _rigidbody.AddForce(100*Random.Range(0.5f, 3) * difference.normalized);
             delay = Random.Range(0.2f, 2);

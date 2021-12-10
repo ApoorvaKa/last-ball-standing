@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa1c4b384772149d7a2a56a0e21b8a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Red1
+  scene: Red12
 --- !u!70 &535310468
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
