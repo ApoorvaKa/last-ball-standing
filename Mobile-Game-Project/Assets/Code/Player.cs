@@ -7,15 +7,18 @@ public class Player : MonoBehaviour
 {
     Rigidbody2D _rigidbody;
     AudioSource _audiosource;
+    public Animator animator;
     public AudioClip coinSnd;
     public AudioClip collision;
     LineRenderer guideline;
     Vector2 startpos;
+
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         guideline = GetComponent<LineRenderer>();
         _audiosource = GetComponent<AudioSource>();
+        animator.SetBool("Dying", false);
     }
 
     void Update()
@@ -56,8 +59,14 @@ public class Player : MonoBehaviour
         _audiosource.PlayOneShot(collision);
         _audiosource.volume = 1;
         if (other.gameObject.CompareTag("Obstacle")){
-            print("died");
+            animator.SetTrigger("Death");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+    }
+
+    IEnumerator wait(){
+        
+        yield return new WaitForSeconds(.3f);
+        
     }
 }
