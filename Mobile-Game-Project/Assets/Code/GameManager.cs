@@ -24,7 +24,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update(){
         timePassed += Time.deltaTime;
-        timer.text = "" + timePassed;
+        int minutes = Mathf.FloorToInt(timePassed / 60F);
+        int seconds = Mathf.FloorToInt(timePassed - minutes * 60);
+        string niceTime = string.Format("{0:00}:{1:00}", minutes, seconds);
+        timer.text = niceTime;
     }
     void FixedUpdate()
     {
