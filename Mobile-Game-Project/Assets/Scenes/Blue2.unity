@@ -3418,5 +3418,9 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5015256717788939972, guid: 8894a70e3a8684efc805858b9cc3ea6a, type: 3}
+      propertyPath: MinDistance
+      value: 3.2502437
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8894a70e3a8684efc805858b9cc3ea6a, type: 3}
