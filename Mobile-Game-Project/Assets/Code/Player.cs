@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     Rigidbody2D _rigidbody;
+    AudioSource _audiosource;
+    public AudioClip coinSnd;
+    public AudioClip collision;
     LineRenderer guideline;
     Vector2 startpos;
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         guideline = GetComponent<LineRenderer>();
+        _audiosource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -40,12 +44,17 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("PickUp")){
             Destroy(other.gameObject);
+            _audiosource.PlayOneShot(coinSnd);
             PublicVars.itemsCollected++;
             // Will add UI and audio changes when decided
         }
     }
 
     private void OnCollisionEnter2D(Collision2D other){
+        _audiosource.volume = _rigidbody.velocity.magnitude/20;
+        Debug.Log(_audiosource.volume);
+        _audiosource.PlayOneShot(collision);
+        _audiosource.volume = 1;
         if (other.gameObject.CompareTag("Obstacle")){
             print("died");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
