@@ -20,7 +20,23 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other){
         if (other.CompareTag("Player")){
+            if(scene == "Hub"){
+                handleCompletion();
+            }
             SceneManager.LoadScene(scene);
+        }
+    }
+
+    void handleCompletion(){
+        string sceneName = SceneManager.GetActiveScene().name;
+        switch(sceneName){
+            case "Blue1": PublicVars.blue1 = true; break;
+            case "Blue2": PublicVars.blue2 = true; break;
+            case "Red12": PublicVars.red1 = true; break;
+            case "Red2": PublicVars.red2 = true; break;
+            case "Purp1": PublicVars.purp1 = true; break;
+            case "Purp2": PublicVars.purp2 = true; break;
+            default: Debug.Log("check names in Portal.cs"); break;
         }
     }
 }
