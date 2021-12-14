@@ -1514,6 +1514,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b8759de18fd3d1244ae403c60468d294, type: 3}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 223755406589694343, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1644,6 +1660,22 @@ PrefabInstance:
     - target: {fileID: 223755406589694336, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7811402678b98234d8d91691c3378cda, type: 3}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 223755406589694343, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
       propertyPath: m_RootOrder
@@ -1984,6 +2016,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 02f9c5c123ba81845b2b404f567093f4, type: 3}
     - target: {fileID: 223755406589694343, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2533,6 +2569,22 @@ PrefabInstance:
     - target: {fileID: 223755406589694336, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b48c4171e4321e4ca458811a3727c0e, type: 3}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 223755406589694343, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
       propertyPath: m_RootOrder
