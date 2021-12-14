@@ -602,6 +602,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b48c4171e4321e4ca458811a3727c0e, type: 3}
     - target: {fileID: 223755406589694343, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -663,6 +667,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1970ea89711a0a540b0b67b9f704747f, type: 3}
     - target: {fileID: 223755406589694343, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -724,6 +732,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 35c9fa15d5f5df34a9c1ef5c9ff01e80, type: 3}
     - target: {fileID: 223755406589694343, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -785,6 +797,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7811402678b98234d8d91691c3378cda, type: 3}
     - target: {fileID: 223755406589694343, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -984,6 +1000,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 223755406589694340, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d5d71965de8bdab429fa6e96fd4edd83, type: 3}
     - target: {fileID: 223755406589694343, guid: 2e28cdbb253ff814ea01b2f0aab86c98, type: 3}
       propertyPath: m_RootOrder
       value: 5
