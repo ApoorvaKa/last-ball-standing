@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject portal;
     public Text timer;
     float timePassed = 0;
+    public Text countChalkText;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(timePassed - minutes * 60);
         string niceTime = string.Format("{0:00}:{1:00}", minutes, seconds);
         timer.text = niceTime;
+        countChalkText.text = PublicVars.itemsCollected.ToString();
     }
     void FixedUpdate()
     {
