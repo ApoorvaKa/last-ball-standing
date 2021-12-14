@@ -49,7 +49,6 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
             _audiosource.PlayOneShot(coinSnd);
             PublicVars.itemsCollected++;
-            // Will add UI and audio changes when decided
         }
     }
 
@@ -60,6 +59,7 @@ public class Player : MonoBehaviour
         _audiosource.volume = 1;
         if (other.gameObject.CompareTag("Obstacle")){
             animator.SetTrigger("Death");
+            PublicVars.itemsCollected = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
