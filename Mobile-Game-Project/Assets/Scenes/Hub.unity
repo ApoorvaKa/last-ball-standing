@@ -958,6 +958,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 846821559133649818, guid: 67b1d7b0f33772844a7af3b7a4649fb0, type: 3}
+      propertyPath: portal
+      value: 
+      objectReference: {fileID: 1489471754}
     - target: {fileID: 846821559440839601, guid: 67b1d7b0f33772844a7af3b7a4649fb0, type: 3}
       propertyPath: m_RootOrder
       value: 10

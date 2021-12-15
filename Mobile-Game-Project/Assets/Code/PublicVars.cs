@@ -12,6 +12,8 @@ public class PublicVars : MonoBehaviour
     // pause menu
     public static bool paused = false;
 
+    public static bool alive = true;
+
     public static bool blue1 = false;
     public static bool blue2 = false;
     public static bool red1 = false;
