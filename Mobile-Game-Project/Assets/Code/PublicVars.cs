@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PublicVars : MonoBehaviour
 {
+    // timing and high score 
+    public static float timePassed;
 
     // item collection
     public static int itemsCollected;
@@ -13,6 +15,7 @@ public class PublicVars : MonoBehaviour
     public static bool paused = false;
 
     public static bool alive = true;
+    // level checker for win state
 
     public static bool blue1 = false;
     public static bool blue2 = false;

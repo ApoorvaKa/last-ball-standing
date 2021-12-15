@@ -11,8 +11,13 @@ public class GameManager : MonoBehaviour
     public int enemyCount;
     public GameObject portal;
     public Text timer;
-    float timePassed = 0;
     public Text countChalkText;
+
+    string sceneName;
+    float bestTime;
+
+    public Text bestTimeText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +29,22 @@ public class GameManager : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-        timePassed += Time.deltaTime;
-        int minutes = Mathf.FloorToInt(timePassed / 60F);
-        int seconds = Mathf.FloorToInt(timePassed - minutes * 60);
+        PublicVars.timePassed += Time.deltaTime;
+        int minutes = Mathf.FloorToInt(PublicVars.timePassed / 60F);
+        int seconds = Mathf.FloorToInt(PublicVars.timePassed - minutes * 60);
         string niceTime = string.Format("{0:00}:{1:00}", minutes, seconds);
         timer.text = niceTime;
         countChalkText.text = PublicVars.itemsCollected.ToString();
+        
+
+        sceneName = SceneManager.GetActiveScene().name;
+        bestTime = PlayerPrefs.GetFloat(sceneName, 0);
+        // print(sceneName);
+        // print(bestTime);
+        int best_minutes = Mathf.FloorToInt(bestTime / 60F);
+        int best_seconds = Mathf.FloorToInt(bestTime - minutes * 60);
+        string bestTimeString = string.Format("Best: {0:00}:{1:00}", best_minutes, best_seconds);
+        bestTimeText.text = bestTimeString;
     }
     void FixedUpdate()
     {
@@ -38,6 +53,7 @@ public class GameManager : MonoBehaviour
         if(enemyCount <= 0){
             portal.SetActive(true);
         }
+
     }
 
     public void Pause()
@@ -58,10 +74,12 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
+        PublicVars.timePassed = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void Home(){
+        PublicVars.timePassed = 0;
         SceneManager.LoadScene("Hub");
         Time.timeScale = 1;
         

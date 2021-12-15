@@ -75,6 +75,7 @@ public class Player : MonoBehaviour
         PublicVars.itemsCollected = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         PublicVars.alive = true;
+        PublicVars.timePassed = 0;
         Debug.Log("finished");
         
     }

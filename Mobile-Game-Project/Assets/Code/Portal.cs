@@ -21,8 +21,15 @@ public class Portal : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
         if (other.CompareTag("Player")){
             if(scene == "Hub"){
+                string sceneName = SceneManager.GetActiveScene().name;
+                print(sceneName);
+                if(PublicVars.timePassed < PlayerPrefs.GetFloat(sceneName, Mathf.Infinity)){
+                    PlayerPrefs.SetFloat(sceneName, PublicVars.timePassed);
+                    print("New Record set");
+                }
                 handleCompletion();
             }
+            PublicVars.timePassed = 0;
             SceneManager.LoadScene(scene);
         }
     }
