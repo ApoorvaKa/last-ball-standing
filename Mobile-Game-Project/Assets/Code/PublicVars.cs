@@ -10,6 +10,8 @@ public class PublicVars : MonoBehaviour
     // item collection
     public static int itemsCollected;
 
+    public static int enemiesSlain;
+
 
     // pause menu
     public static bool paused = false;

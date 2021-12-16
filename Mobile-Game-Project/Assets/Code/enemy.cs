@@ -48,6 +48,7 @@ public class enemy : MonoBehaviour
         if (other.gameObject.CompareTag("Obstacle")){
             print("died");
             Destroy(this.gameObject);
+            PublicVars.enemiesSlain++;
         }
     }
 }
