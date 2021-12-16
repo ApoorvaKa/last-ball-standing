@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         // print(bestTime);
         int best_minutes = Mathf.FloorToInt(bestTime / 60F);
         int best_seconds = Mathf.FloorToInt(bestTime - minutes * 60);
-        if (best_minutes >= 0){
+        if (best_minutes >= 0 && best_seconds >= 0){
             string bestTimeString = string.Format("Best: {0:00}:{1:00}", best_minutes, best_seconds);
             bestTimeText.text = bestTimeString;
         }
