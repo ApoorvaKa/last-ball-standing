@@ -29,7 +29,11 @@ public class Portal : MonoBehaviour
                 }
                 handleCompletion();
             }
+            PublicVars.timePassedTotal += PublicVars.timePassed;
             PublicVars.timePassed = 0;
+            PublicVars.itemsCollectedTotal += PublicVars.itemsCollectedThisLevel;
+            PublicVars.itemsCollectedThisLevel = 0;
+
             SceneManager.LoadScene(scene);
         }
     }
