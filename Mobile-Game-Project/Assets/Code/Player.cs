@@ -49,6 +49,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("PickUp")){
             Destroy(other.gameObject);
+            _audiosource.volume = 1;
             _audiosource.PlayOneShot(coinSnd);
             PublicVars.itemsCollectedThisLevel++;
         }
@@ -58,7 +59,6 @@ public class Player : MonoBehaviour
         _audiosource.volume = _rigidbody.velocity.magnitude/20;
         Debug.Log(_audiosource.volume);
         _audiosource.PlayOneShot(collision);
-        _audiosource.volume = 1;
         if (other.gameObject.CompareTag("Obstacle")){
             PublicVars.alive = false;
             _rigidbody.velocity = Vector2.zero;

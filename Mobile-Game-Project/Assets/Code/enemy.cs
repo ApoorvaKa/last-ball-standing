@@ -36,14 +36,13 @@ public class enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other){
         if (!(other.gameObject.CompareTag("Player"))){
-            _audiosource.volume = _rigidbody.velocity.magnitude/25;
+            _audiosource.volume = _rigidbody.velocity.magnitude/20;
 
             // half the volume if 2 enemies collide
             if(other.gameObject.CompareTag("enemy")){
-                _audiosource.volume /= 4;
+                _audiosource.volume /= 2;
             }
             _audiosource.Play();
-            _audiosource.volume = 1;
         }
         if (other.gameObject.CompareTag("Obstacle")){
             print("died");
