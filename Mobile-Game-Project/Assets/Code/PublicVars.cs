@@ -6,9 +6,11 @@ public class PublicVars : MonoBehaviour
 {
     // timing and high score 
     public static float timePassed;
+    public static float timePassedTotal;
 
     // item collection
-    public static int itemsCollected;
+    public static int itemsCollectedTotal;
+    public static int itemsCollectedThisLevel;
 
     public static int enemiesSlain;
 

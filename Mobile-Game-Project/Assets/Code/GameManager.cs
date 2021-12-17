@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(PublicVars.timePassed - minutes * 60);
         string niceTime = string.Format("{0:00}:{1:00}", minutes, seconds);
         timer.text = niceTime;
-        countChalkText.text = PublicVars.itemsCollected.ToString();
+        countChalkText.text = PublicVars.itemsCollectedThisLevel.ToString();
         
 
         sceneName = SceneManager.GetActiveScene().name;

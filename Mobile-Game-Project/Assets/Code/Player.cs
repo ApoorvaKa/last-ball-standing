@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
         if(other.CompareTag("PickUp")){
             Destroy(other.gameObject);
             _audiosource.PlayOneShot(coinSnd);
-            PublicVars.itemsCollected++;
+            PublicVars.itemsCollectedThisLevel++;
         }
     }
 
@@ -72,10 +72,11 @@ public class Player : MonoBehaviour
     IEnumerator WaitAndDie(float waitTime){
         Debug.Log("starting the death coroutine");
         yield return new WaitForSeconds(1.5f);
-        PublicVars.itemsCollected = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         PublicVars.alive = true;
         PublicVars.timePassed = 0;
+        PublicVars.itemsCollectedTotal -= PublicVars.itemsCollectedThisLevel;
+        PublicVars.itemsCollectedThisLevel = 0;
         Debug.Log("finished");
         
     }
